@@ -42,3 +42,20 @@ The project uses a Python HTTP server to serve static files during development:
 - Configured workflow for development preview
 - Set up static deployment configuration
 - Added .gitignore for Python files
+- Added space-themed stock images for all pages
+- Created shared CSS file (styles.css) for consistent styling
+- Improved text contrast and readability across all pages
+- Added space nebula background image
+- Updated hero section with space battle image
+- Added faction-specific images (Caldari, Amarr)
+- Added images for ships, mining, and PvP sections
+
+## Assets
+Stock images are stored in `attached_assets/stock_images/`:
+- `epic_space_battle_wi_*.jpg` - Space battle for hero and PvP sections
+- `dark_space_nebula_st_*.jpg` - Background image
+- `blue_futuristic_mili_*.jpg` - Caldari faction
+- `golden_ornate_spaces_*.jpg` - Amarr faction
+- `large_battleship_spa_*.jpg` - Ships page header
+- `space_mining_asteroi_*.jpg` - Industry/mining section
+- `futuristic_spaceship_*.jpg` - Carousel and exploration sections

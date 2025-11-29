@@ -5,31 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hajók - EVE Online</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #0a0a0a;
-            color: #f8f9fa;
-        }
-        .card {
-            background-color: #1a1a1a;
-            border: 1px solid #333;
-        }
-        .text-neon {
-            color: #00ffff;
-        }
-        .accordion-button {
-            background-color: #343a40 !important;
-            color: #f8f9fa !important;
-        }
-        .accordion-button:not(.collapsed) {
-            background-color: #495057 !important;
-            color: #00ffff !important;
-        }
-    </style>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand text-neon" href="index.html">EVE Online</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,34 +26,110 @@
         </div>
     </nav>
 
-    <main class="container my-5" style="margin-top: 100px !important;">
+    <main class="container my-5">
         <h1 class="text-center mb-5 text-neon">EVE Online Hajók</h1>
         
+        <div class="row mb-4">
+            <div class="col-12">
+                <img src="attached_assets/stock_images/large_battleship_spa_be96cb6a.jpg" class="w-100 rounded shadow" alt="EVE Online hajók" style="max-height: 300px; object-fit: cover;">
+            </div>
+        </div>
+        
         <div class="accordion" id="shipAccordion">
-            <div class="accordion-item bg-dark border-info">
+            <div class="accordion-item">
                 <h2 class="accordion-header" id="headingBattleship">
-                    <button class="accordion-button bg-secondary text-light fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBattleship" aria-expanded="true" aria-controls="collapseBattleship">
-                        🚢 Battleship (Csatahajó) – A Gerinc
+                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBattleship" aria-expanded="true" aria-controls="collapseBattleship">
+                        Battleship (Csatahajó) – A Gerinc
                     </button>
                 </h2>
                 <div id="collapseBattleship" class="accordion-collapse collapse show" aria-labelledby="headingBattleship" data-bs-parent="#shipAccordion">
-                    <div class="accordion-body text-light">
+                    <div class="accordion-body">
                         <p>A Battleship-ek a legnagyobb Sub-Capital hajók, hatalmas tűzerővel és védelemmel rendelkeznek. Lassúak, de egy csata során ők biztosítják a fő sebzést.</p>
                         
                         <div class="row mt-3">
                             <div class="col-md-6">
-                                <h6>Fő Szerep:</h6>
+                                <h6 class="text-neon">Fő Szerep:</h6>
                                 <ul>
-                                    <li><span class="text-neon">Tanking:</span> Hatalmas Páncél (Armor) vagy Pajzs (Shield) puffer.</li>
-                                    <li><span class="text-neon">PvE:</span> Magas szintű Mission futtatás.</li>
-                                    <li><span class="text-neon">PvP:</span> Flotta fő sebzésforrása.</li>
+                                    <li><strong>Tanking:</strong> Hatalmas Páncél (Armor) vagy Pajzs (Shield) puffer.</li>
+                                    <li><strong>PvE:</strong> Magas szintű Mission futtatás.</li>
+                                    <li><strong>PvP:</strong> Flotta fő sebzésforrása.</li>
                                 </ul>
                             </div>
                             <div class="col-md-6">
-                                <h6>Példa:</h6>
-                                <div class="card bg-secondary-subtle">
-                                    <div class="card-body text-dark">
-                                        <strong>Név:</strong> Abaddon (Amarr) / <strong>Típus:</strong> Lézer / <strong>Jellemző:</strong> Erős Páncél
+                                <h6 class="text-neon">Példa:</h6>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <strong>Név:</strong> Abaddon (Amarr)<br>
+                                        <strong>Típus:</strong> Lézer<br>
+                                        <strong>Jellemző:</strong> Erős Páncél
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingCruiser">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCruiser" aria-expanded="false" aria-controls="collapseCruiser">
+                        Cruiser (Cirkáló) – A Sokoldalú
+                    </button>
+                </h2>
+                <div id="collapseCruiser" class="accordion-collapse collapse" aria-labelledby="headingCruiser" data-bs-parent="#shipAccordion">
+                    <div class="accordion-body">
+                        <p>A Cruiser-ek kiegyensúlyozott hajók, amelyek a sebesség és a tűzerő közötti kompromisszumot képviselik. Ideálisak kezdőknek és veteránoknak egyaránt.</p>
+                        
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <h6 class="text-neon">Fő Szerep:</h6>
+                                <ul>
+                                    <li><strong>Támogatás:</strong> Logistics, Electronic Warfare.</li>
+                                    <li><strong>PvE:</strong> Közepes szintű küldetések.</li>
+                                    <li><strong>PvP:</strong> Kis flották gerince.</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="text-neon">Példa:</h6>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <strong>Név:</strong> Caracal (Caldari)<br>
+                                        <strong>Típus:</strong> Rakéta<br>
+                                        <strong>Jellemző:</strong> Kiváló DPS/ISK arány
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFrigate">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFrigate" aria-expanded="false" aria-controls="collapseFrigate">
+                        Frigate (Fregatt) – A Gyors
+                    </button>
+                </h2>
+                <div id="collapseFrigate" class="accordion-collapse collapse" aria-labelledby="headingFrigate" data-bs-parent="#shipAccordion">
+                    <div class="accordion-body">
+                        <p>A legkisebb harci hajók, de ne becsüld alá őket! A Frigate-ek villámgyorsak és halálosak lehetnek a megfelelő pilóta kezében.</p>
+                        
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <h6 class="text-neon">Fő Szerep:</h6>
+                                <ul>
+                                    <li><strong>Tackle:</strong> Ellenség lassítása, megállítása.</li>
+                                    <li><strong>Scout:</strong> Felderítés és információgyűjtés.</li>
+                                    <li><strong>PvP:</strong> Solo és kis csoportos harcok.</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="text-neon">Példa:</h6>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <strong>Név:</strong> Rifter (Minmatar)<br>
+                                        <strong>Típus:</strong> Autocannon<br>
+                                        <strong>Jellemző:</strong> Legendás solo hajó
                                     </div>
                                 </div>
                             </div>
@@ -84,7 +140,7 @@
         </div>
     </main>
 
-    <footer class="bg-dark text-light text-center py-3 mt-5">
+    <footer class="text-light text-center py-3 mt-5">
         <div class="container">
             <p class="mb-0">&copy; 2025 EVE Online Fan Site. Készült Bootstrap 5 felhasználásával. | <a href="#" class="text-info">Adatvédelem</a></p>
         </div>
