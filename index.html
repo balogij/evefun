@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVE Online - New Eden Univerzuma</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Egyedi stílusok a sötét, űr-témához */
+        body {
+            background-color: #0a0a0a; /* Sötét háttér */
+            color: #f8f9fa; /* Világos betűszín */
+        }
+        .hero-section {
+            background: url('eve-online-space-bg.jpg') no-repeat center center;
+            background-size: cover;
+            height: 60vh; /* Kisebb Hero szekció mobilra */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Sötét overlay a szöveg olvashatóságáért */
+        }
+        .card {
+            background-color: #1a1a1a; /* Sötétebb kártya háttér */
+            border: 1px solid #333;
+        }
+        .text-neon {
+            color: #00ffff; /* Cián kiemelés */
+        }
+        /* Mobile-first: Nagyobb magasság desktopon */
+        @media (min-width: 992px) {
+            .hero-section {
+                height: 80vh;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-neon" href="#">EVE Online</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Főoldal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="frakciok.html">Frakciók</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hajok.html">Hajók</a></li>
+                    <li class="nav-item"><a class="nav-link" href="strategiak.html">Stratégiák</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container position-relative" style="z-index: 2;">
+            <h1 class="display-3 fw-bold text-neon">NEW EDEN: A Te Univerzumod</h1>
+            <p class="lead text-light">Egyetlen univerzum, egyetlen szerver, ahol a történetet a játékosok írják. Kereskedj, bányássz, fedezz fel, és vívj grandiózus űrcsatákat!</p>
+            <a href="strategiak.html" class="btn btn-outline-info btn-lg mt-3">Kezdd el most!</a>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section class="mb-5">
+            <h2 class="text-center mb-4 text-light">Mi az EVE Online?</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <p class="fs-5">Az EVE Online egy hatalmas, **közösség-vezérelt** sci-fi MMORPG, amely a **New Eden** univerzumában játszódik. Több mint 7000 csillagrendszer áll rendelkezésre, ahol a játékosok szabadon alakíthatják a sorsukat. Ez nem egy lineáris játék: egy **sandbox** környezet, ahol a legnagyobb birodalmakat is a játékosok alapították, és a legfontosabb gazdasági tranzakciókat is ők bonyolítják. Legyél bányász, kereskedő, felfedező, kalóz vagy a legnagyobb flották tábornoka.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border border-info border-1 opacity-25">
+
+        <section class="py-5">
+            <h3 class="text-center mb-4 text-neon">Pillanatképek az Univerzumból</h3>
+            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://via.placeholder.com/1200x500/000033/00ffff?text=EVE+Online+Csata" class="d-block w-100" alt="Hatalmas űrcsata">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>A Flotta</h5>
+                            <p>Több ezer játékos részvételével zajló epikus csaták.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/1200x500/000033/00ffff?text=EVE+Online+Hajó" class="d-block w-100" alt="Különböző hajóosztályok">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/1200x500/000033/00ffff?text=EVE+Online+Planet" class="d-block w-100" alt="Bolygó látképe">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Előző</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Következő</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 EVE Online Fan Site. Készült Bootstrap 5 felhasználásával. | <a href="#" class="text-info">Adatvédelem</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
